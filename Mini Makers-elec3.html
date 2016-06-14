@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://mini-makers.dev/electronics/3 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Mini Makers</title>
+
+    <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="./Mini Makers-elec3_files/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="./Mini Makers-elec3_files/app.css">
+
+  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+  <body>
+
+    <div class="container">      
+
+
+            
+
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Electronics Workshop #3 </h1>
+        <div class="media">
+          <div class="media-left media-middle">
+            <a href="http://mini-makers.dev/electronics/3#">
+              <img class="media-object" src="./Mini Makers-elec3_files/sku_150802_1.jpg" alt="..." width="300px">
+            </a>
+          </div>
+          <div class="media-body">
+            <p>Today we'll review the basic programming concepts from last week and learn some new code.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>What are we doing today?</h1>
+      </div>
+
+    </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">Today's Plan</div>
+            <div class="panel-body">
+              <h2><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>  ..........  1.  Quick Review</h2>
+              <h2><span class="glyphicon glyphicon-music" aria-hidden="true"></span>  ..........  2.  Circuit 4 - Code</h2>
+              <h2><span class="glyphicon glyphicon-flag" aria-hidden="true"></span>  ..........  3.  Circuit 4 - Build it!</h2>
+              <h3>  a. Building a circuit</h3>
+              <h3>  b. Uploading code</h3>
+              <h3>  c. UPGRADE CODE</h3>
+            </div>
+
+        </div>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>Last Week</h1>
+      </div>
+
+    </div>
+
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">Analogue and Digital</div>
+
+            <div class="panel-body">
+
+            <div class="media-body">
+              <div class="media-left">
+
+            
+              <img class="media-object" src="./Mini Makers-elec3_files/41jBgw6XbXL._SY355_.jpg" width="200px">
+
+              <img class="media-object" src="./Mini Makers-elec3_files/51c9c988ce395fab0e000000.png" width="500px">
+
+              <img class="media-object" src="./Mini Makers-elec3_files/51c48875ce395f745a000000.png" width="500px">
+                            <img class="media-object" src="./Mini Makers-elec3_files/51c495ebce395f1b5a000000.png" width="500px">
+            
+              </div>
+              <div class="media-right">
+                <h3>Pins</h3>
+                <p>Each of the pins can be set to INPUT or OUTPUT</p>
+                <h4><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> INPUT</h4>
+                <h4><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> OUTPUT</h4>
+
+                <br>
+                <br>
+
+                <h2>Analogue</h2>
+                <ul>
+                  <li>Anything that has more than two values</li>
+                  <li>It has numbers</li>
+                  <li>It has a needle</li>
+                  <li>It's continuous - you can get in-between values</li>
+                  <li>Found in nature and environment  i.e. time, distance, height, temperature, humidity, etc.</li>
+                </ul>
+
+                <br>
+                <br>
+
+                <h2>Digital</h2>
+                <ul>
+                  <li>Only TWO values: ON or OFF</li>
+                  <li>It's also described as HIGH or LOW</li>
+                  <li>Often controlled by a switch</li>
+                  <li>Not found in nature - we derive it from some reference.</li>
+                  <li>e.g. If signal is &gt; 3V, it's HIGH. 0V is LOW.</li>
+                </ul>
+
+                <br>
+                <br>
+
+                <h2>Analogue Signal Graph</h2>
+                <ul>
+                  <li>Smooth waves</li>
+                  <li>Continuous</li>
+                </ul>
+
+                <br>
+                <br>
+
+                <h2>Digital Signal Graph</h2>
+                <ul>
+                  <li>Square waves</li>
+                  <li>Only two values</li>
+                </ul>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">Comment vs Code</div>
+
+        <div class="panel-body">
+
+          <h2>Comment vs Code</h2>
+
+          <h3>Comment is for human.</h3>
+            <pre><code class="hljs coffeescript">
+            <span class="hljs-regexp">//</span> This <span class="hljs-keyword">is</span> a comment - anything <span class="hljs-literal">on</span> a line after <span class="hljs-string">"//"</span> <span class="hljs-keyword">is</span> ignored
+            <span class="hljs-regexp">//</span> <span class="hljs-keyword">by</span> the computer.
+            </code></pre>
+
+            <pre><code class="hljs cpp">
+            <span class="hljs-comment">/* This is also a comment - this one can be multi-line, but it
+            must start and end with these characters */</span>
+            </code></pre>
+            
+          <h3>Code is for the computer.</h3>
+
+            <pre><code class="hljs cpp">
+            
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+        </span>{
+          pinMode(<span class="hljs-number">13</span>, OUTPUT);
+        }
+            </code></pre>
+
+
+
+        </div>
+      </div>
+
+
+
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">Setup</div>
+
+        <div class="panel-body">
+
+          <h2>Setup</h2>
+
+          <h3> Run once at start and never run again.</h3>
+
+            <pre><code class="hljs cpp">
+                  
+              <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span>
+              </span>{
+                pinMode(<span class="hljs-number">13</span>, OUTPUT);
+              }
+            </code></pre>
+
+            <br>
+            <br>
+            <br>
+
+          <h3>Function</h3>
+
+          <ul>
+            <li>Function is a set of instructions to follow</li>
+            <li>It's like a To-Do List</li>
+            <li>Machine follows this 'To Do List' EXACTLY as it is</li>
+          </ul>
+
+            <br>
+            <br>
+            <br>
+
+          <p>This is how you'd write a function</p>
+
+            <pre><code class="hljs java">
+            
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">_____</span><span class="hljs-params">()</span>
+            </span>{
+              
+            }
+            </code></pre>
+
+        </div>
+      </div>
+
+
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">Loop</div>
+
+        <div class="panel-body">
+
+          <h2>Loop - forever</h2>
+
+          <h3>Code inside loop is run repeatly FOREVER</h3>
+            <pre><code class="hljs cpp">
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+            </span>{
+
+            }
+            </code></pre>
+
+
+            <br>
+            <br>
+            <br>
+
+
+          <h3>Main part of the program goes inside loop</h3>
+
+
+
+            <pre><code class="hljs cpp">
+                
+            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+            </span>{
+
+              blink_LED();
+
+            }
+            </code></pre>
+
+        </div>
+      </div>
+
+
+
+    <div class="container">
+      <div class="page-header">
+        <h1>New Circuit - Multiple LEDs!</h1>
+      </div>
+
+                  <img class="media-object" src="./Mini Makers-elec3_files/Circuit_4.png" alt="...">
+
+
+
+
+                  <img class="media-object" src="./Mini Makers-elec3_files/circuit_4_ss.png" alt="...">
+    </div>
+
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">Circuit 4</div>
+            <div class="panel-body">
+              <h1>Variables</h1>
+
+
+            <pre><code class="hljs http">
+            
+
+<span class="cpp">            <span class="hljs-keyword">int</span> ledPins[] = {<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>,<span class="hljs-number">8</span>,<span class="hljs-number">9</span>};
+            </span></code></pre>
+
+
+              <h1>Main Program</h1>
+
+            <pre><code class="hljs http">
+            
+
+<span class="cpp">
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span>
+</span>{
+  <span class="hljs-comment">// This loop() calls functions that we've written further below.</span>
+  <span class="hljs-comment">// We've disabled some of these by commenting them out (putting</span>
+  <span class="hljs-comment">// "//" in front of them). To try different LED displays, remove</span>
+  <span class="hljs-comment">// the "//" in front of the ones you'd like to run, and add "//"</span>
+  <span class="hljs-comment">// in front of those you don't to comment out (and disable) those</span>
+  <span class="hljs-comment">// lines.</span>
+
+  oneAfterAnotherNoLoop();  <span class="hljs-comment">// Light up all the LEDs in turn</span>
+  
+  <span class="hljs-comment">//oneAfterAnotherLoop();  // Same as oneAfterAnotherNoLoop,</span>
+                            <span class="hljs-comment">// but with much less typing</span>
+  
+  <span class="hljs-comment">//oneOnAtATime();         // Turn on one LED at a time,</span>
+                            <span class="hljs-comment">// scrolling down the line</span>
+  
+  <span class="hljs-comment">//pingPong();             // Light the LEDs middle to the edges</span>
+
+  <span class="hljs-comment">//marquee();              // Chase lights like you see on signs</span>
+
+  <span class="hljs-comment">//randomLED();            // Blink LEDs randomly</span>
+}
+
+            </span></code></pre>
+
+            </div>
+
+        </div>
+
+
+
+      <hr>
+
+      <footer>
+        <div class="container">
+        <p>© 2016 Mira K.</p>
+        </div>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Mini Makers-elec3_files/jquery.min.js"></script>
+    <script src="./Mini Makers-elec3_files/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./Mini Makers-elec3_files/default.min.css">
+    <script src="./Mini Makers-elec3_files/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+
+
+</body></html>
