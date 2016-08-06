@@ -1,0 +1,30 @@
+
+.slide_container {
+  max-width: 600px;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.slide_container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.slide_container img {
+  width: 100%;
+  height: auto;
+}
+
+.prev {
+	float: right;
+}
+
+.next {
+	float: left;
+}
+
+.manual_slides {
+	margin-bottom: 30px;
+}
